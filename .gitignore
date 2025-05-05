@@ -1,0 +1,17 @@
+   # Fichiers et dossiers générés par .NET
+   bin/
+   obj/
+   *.user
+   *.suo
+   *.vs/
+
+   # Fichiers et dossiers générés par Angular
+   node_modules/
+   dist/
+   .angular/
+   .env
+
+   # Fichiers système
+   .DS_Store
+   Thumbs.db
+   

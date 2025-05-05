@@ -1,0 +1,2 @@
+ng build --output-path=dist/app1 --base-href=/app1/ --configuration production
+ng build --output-path=dist/app2 --base-href=/app2/ --configuration production

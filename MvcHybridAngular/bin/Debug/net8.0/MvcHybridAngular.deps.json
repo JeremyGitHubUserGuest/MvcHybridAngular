@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MvcHybridAngular/1.0.0": {
+        "runtime": {
+          "MvcHybridAngular.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MvcHybridAngular/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

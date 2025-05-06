@@ -5,6 +5,9 @@
    *.suo
    *.vs/
 
+   # Visual studio
+   .vs/
+
    # Fichiers et dossiers générés par Angular
    node_modules/
    dist/

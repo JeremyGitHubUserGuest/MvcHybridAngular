@@ -1,20 +1,22 @@
-<h2>Uploader un fichier</h2>
+<div class="upload-component">
+  <h2>Uploader un fichier</h2>
 
-<form [formGroup]="form">
-  <mat-form-field appearance="fill">
-    <mat-label>Type de document</mat-label>
-    <mat-select formControlName="contentType">
-      <mat-option *ngFor="let type of contentTypes" [value]="type">
-        {{ type }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+  <form [formGroup]="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Type de document</mat-label>
+      <mat-select formControlName="contentType" panelClass="upload-select-panel">
+        <mat-option *ngFor="let type of contentTypes" [value]="type">
+          {{ type }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <input type="file" (change)="onFileSelected($event)" />
+    <input type="file" (change)="onFileSelected($event)" />
 
-  <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="form.invalid">
-    Uploader
-  </button>
-</form>
+    <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="form.invalid">
+      Uploader
+    </button>
+  </form>
 
-<p *ngIf="selectedFile">Fichier sélectionné : {{ selectedFile.name }}</p>
+  <p *ngIf="selectedFile">Fichier sélectionné : {{ selectedFile.name }}</p>
+</div>

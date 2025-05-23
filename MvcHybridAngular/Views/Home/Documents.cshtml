@@ -1,9 +1,12 @@
-﻿@{
-    ViewData["Title"] = "Documents";
-}
+﻿@{  
+    ViewData["Title"] = "Documents";  
+}  
 
-<base href="/Home/Documents/" />
-<documents-app-root></documents-app-root>
-<script src="~/documents/polyfills.js" type="module"></script>
+@{  
+    var lang = ViewContext.RouteData.Values["lang"] as string;  
+    var baseHref = !string.IsNullOrEmpty(lang) ? $"/{lang}/Home/Documents/" : "/Home/Documents/";  
+}  
+<base href="@baseHref" />  
+<documents-app-root></documents-app-root>  
+<script src="~/documents/polyfills.js" type="module"></script>  
 <script src="~/documents/main.js" type="module"></script>
-

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-and-copy": "ng build --output-path=dist/navigation  --configuration production && xcopy dist\\navigation\\browser\\* ..\\..\\wwwroot\\navigation /E /Y"
   },
   "private": true,
   "dependencies": {

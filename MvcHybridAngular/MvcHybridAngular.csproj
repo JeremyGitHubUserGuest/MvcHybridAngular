@@ -21,6 +21,7 @@
     <Folder Include="Applications\Documents\dist\" />
     <Folder Include="wwwroot\documents\" />
     <Folder Include="wwwroot\navigation\" />
+    <Folder Include="wwwroot\lang-selector\" />
   </ItemGroup>
 
 </Project>

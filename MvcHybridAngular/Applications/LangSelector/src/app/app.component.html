@@ -1,0 +1,14 @@
+<div class="lang-selector-grid">
+  <button *ngIf="currentLang === 'en'"
+          class="lang-btn"
+          (click)="switchLang('fr')"
+          aria-label="Français">
+    🇫🇷 Français
+  </button>
+  <button *ngIf="currentLang === 'fr'"
+          class="lang-btn"
+          (click)="switchLang('en')"
+          aria-label="English">
+    🇬🇧 English
+  </button>
+</div>

@@ -28,11 +28,6 @@ namespace MvcHybridAngular.Controllers
             return View("Documents");
         }
 
-        public IActionResult App2()
-        {
-            return View();
-        }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

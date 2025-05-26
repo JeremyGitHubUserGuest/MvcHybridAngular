@@ -16,3 +16,4 @@ dist/
 Thumbs.db
 /MvcHybridAngular/bin/Debug/net8.0
 /MvcHybridAngular/obj
+/MvcHybridAngular/Applications/LangSelector/.vscode

@@ -40,13 +40,18 @@
         </nav> *@
 
 
-        <navigation-app-root></navigation-app-root>
-        <script src="~/navigation/polyfills.js" type="module"></script>
-        <script src="~/navigation/main.js" type="module"></script>
-
-        <lang-selector-app-root></lang-selector-app-root>
-        <script src="~/lang-selector/polyfills.js" type="module"></script>
-        <script src="~/lang-selector/main.js" type="module"></script>
+        <div class="topbar-grid">
+            <div class="topbar-nav">
+                <navigation-app-root></navigation-app-root>
+                <script src="~/navigation/polyfills.js" type="module"></script>
+                <script src="~/navigation/main.js" type="module"></script>
+            </div>
+            <div class="topbar-lang">
+                <lang-selector-app-root></lang-selector-app-root>
+                <script src="~/lang-selector/polyfills.js" type="module"></script>
+                <script src="~/lang-selector/main.js" type="module"></script>
+            </div>
+        </div>
 
     </header>
     <div class="container">
